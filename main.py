@@ -15,7 +15,7 @@ def monitor():
         if mem_percent > 90:
             send_alert("High memory usage!")
 
-        if disk_percent > 80:
+        if disk_percent >= 80:
             send_alert("Low disk space!")
 
 
